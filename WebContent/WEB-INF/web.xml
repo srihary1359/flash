@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>sessionmanage</display-name>
+  <servlet-mapping>
+  <servlet-name>kav</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>kav</servlet-name>
+  <servlet-class>sessionmanagehari.Addservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>jhh</servlet-name>
+  <url-pattern>/Square</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>jhh</servlet-name>
+  <servlet-class>sessionmanagehari.Square</servlet-class>
+  </servlet>
+  </web-app>
