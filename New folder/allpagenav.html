@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dropbtn {
+      background-color: rgb(202, 202, 236);
+      color:black;
+      padding: 10px;
+      margin-right: 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+    
+    .dropdown-content a:hover {background-color:gray;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color:yellow;
+    }
+    .sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: lightyellow;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color:black;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color:black;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+#sri{
+background-color: lightyellow;
+}
+#no{
+
+background-image: url("insurance.jpg");
+text-align: center;
+font-size: 20px;
+text-transform: capitalize;
+font-weight: 900;
+font-family: cursive;
+width:150mm;
+}
+body{
+    background-color: rgb(187, 187, 240);
+    text-align: center;
+}
+address{
+    font-size: 30px;
+}
+.mapouter{
+margin-left: 500px;
+}
+</style>
+<body>
+    <div id="sri">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html">About</a>
+            <a href="clients.html">Clients</a>
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help</a>
+    
+          </div> 
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="insurancehomepage.html" id="noline">home</a></button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">house insurance</button>
+            <div class="dropdown-content">
+            <a href="#">Standard Fire and Special Perils Policy.</a>
+            <a href="#">earthquake insurance</a>
+            <a href="#">Property insurance</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">vehicle insurance</button>
+            <div class="dropdown-content">
+            <a href="#">two wheeler insurance</a>
+            <a href="#">four wheeler insurance</a>
+            <a href="#">other vehicle insurance</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">life insurance</button>
+            <div class="dropdown-content">
+            <a href="#">Jeevan Umang</a>
+            <a href="#">Jeevan Amar</a>
+            <a href="#">Money Back 25 years</a>
+            </div>
+          </div>
+          <div class="dropdown" id="j">
+            <p class="dropbtn" id="no">!!!!guten tags insurance welcome you</p>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          </div>
+</body>
+
+<!-- <body>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="503" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pallavaram&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:503px;}</style><a href="https://google-map-generator.com">embed google map iframe</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:503px;}</style></div></div>
+    <p>
+<h3>contact team lead sabari:</h3>
+ phone no=7889998777
+ <br>
+ emailid=<a href="#">sabi@gamil.com     </a>
+    </p>
+    <p>
+        <h3>contact team manager vicky:</h3>
+         phone no=788999907
+         <br>
+         emailid=<a href="#">vicki@gamil.com</a>     
+            </p>
+            <p>
+                <h3>contact team coordinator sukumar:</h3>
+                 phone no=7009998777
+                 <br>
+                 emailid=<a href="#">suku@gamil.com </a>    
+                    </p>
+
+                    <p>
+                        <h3>contact team developer srihari:</h3>
+                         phone no=8939764589
+                         <br>
+                         emailid=<a href="https://mail.google.com/mail/u/0/#inbox">srihary1359@gmail.com</a>    
+                            </p>
+
+    <hr>
+    <address>
+        <h4>Address</h4>
+        Guten tags insurance<br>
+        Written by <a href="srihary1359@gmail.com">srihari</a>.<br> 
+        Visit us at: monday to sunday <br>
+        Box 564, hello<br>
+        chennai-6000348;<br>
+        india        
+    </address>
+</body> -->
+</html>
